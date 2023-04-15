@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/3a96c6052d.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body
+        class="bg-[url(./resources/background.jpg)] bg-cover bg-no-repeat pb-10"
+    >
+        <img
+            id="background"
+            src="./resources/wp4870590-4k-minimal-wallpapers.jpg"
+            alt=""
+            class="absolute w-[400px] h-[800px]"
+        />
+        <div class="name">
+            <h1>Weather App</h1>
+        </div>
+        <div class="input">
+            <input id="cityname" type="text" placeholder="Search...." />
+        </div>
+        <div><img src="search-icon.svg" alt="" id="submit" /></div>
+        <div id="overlay"></div>
+        <div
+            class="bg-gray-800/60 w-[250px] mx-auto rounded-lg h-[40px] relative z-50"
+        >
+            <p id="loc" class="text-[25px] font-bold text-gray-100"></p>
+            <p id="date" class="text-gray mt-[5px] pb-[5px]"></p>
+        </div>
+        <div id="card--container">
+            <div class="result res1">
+                <p id="city"></p>
+                <div class="contains">
+                    <span id="icon"></span>
+                    <p id="sky">Sky condition:</p>
+                    <p id="temp">Temperature:</p>
+                    <p id="wind">Wind speed:</p>
+                    <p id="humidity">Humidity:</p>
+                    <img
+                        id="gif"
+                        src="./resources/icons/sun (1).gif"
+                        width="70px"
+                        height="70px"
+                        alt="gif"
+                    />
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
